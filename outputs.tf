@@ -17,3 +17,19 @@ output "internet_gateway_id" {
 output "nat_gateway_id" {
   value = aws_nat_gateway.main.id
 }
+
+output "ecr_repository_arn" {
+  value = aws_ecr_repository.app_repository.arn
+}
+
+output "ecr_repository_name" {
+  value = aws_ecr_repository.app_repository.name
+}
+
+output "ecs_cluster_id" {
+  value = aws_ecs_cluster.app_cluster.id
+}
+
+output "ecs_cluster_name" {
+  value = aws_ecs_cluster.app_cluster.name
+}
